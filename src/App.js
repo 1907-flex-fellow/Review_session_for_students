@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
+import { HashRouter, Route, Switch } from 'react-router-dom';
+import { connect } from 'react-redux'
+
+import Nav from './Nav';
+import Note from './Note';
+import { fetchNotes } from './store/actions';
+=======
 import { HashRouter, Route, Link, Switch, Redirect } from 'react-router-dom';
 import { action } from './store';
 import { connect } from 'react-redux';
 
 import Nav from './Nav';
 import Note from './Note';
+>>>>>>> origin/master
 
 class App extends Component{
     constructor(){
@@ -15,6 +24,9 @@ class App extends Component{
     componentDidMount(){
         this.props.fetchNotes();
     }
+    componentDidMount(){
+        this.props.fetchNotes();
+    }
 
     render(){
         return(
@@ -22,7 +34,11 @@ class App extends Component{
             <HashRouter>
                 <Route component={Nav}/>
                 <Switch>
+<<<<<<< HEAD
+                    <Route exact path='/notes' component={Note} />
+=======
                     <Route exact path='/notes' component={Note}/>
+>>>>>>> origin/master
                 </Switch>
             </HashRouter>
         )
@@ -32,7 +48,11 @@ class App extends Component{
 
 const mapDispatchToProps = (dispatch) => {
     return {
+<<<<<<< HEAD
+        fetchNotes: () => dispatch(fetchNotes())
+=======
         fetchNotes: () => dispatch(action.fetchNotes())
+>>>>>>> origin/master
     }
 }
 

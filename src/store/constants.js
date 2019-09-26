@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+const SET_NOTES = 'SET_NOTES';
+
+export {
+    SET_NOTES,
+}
+=======
 const SET_USERS = 'SET_USERS';
 const SET_NOTES = 'SET_NOTES';
 const DESTROY_NOTE = 'DESTROY_NOTE';
@@ -11,3 +18,4 @@ export {
     UPDATE_NOTE,
     CREATE_NOTE
 };
+>>>>>>> origin/master
