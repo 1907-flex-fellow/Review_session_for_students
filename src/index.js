@@ -4,4 +4,8 @@ import App from './App';
 import { Provider } from 'react-redux';
 import store from './store';
 
+<<<<<<< HEAD
 render(<Provider store={store}><App/></Provider>, document.querySelector('#root'));
+=======
+render(<Provider store={ store }><App/></Provider>, document.querySelector('#root'));
+>>>>>>> origin/master
